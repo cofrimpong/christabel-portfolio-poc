@@ -3,8 +3,8 @@
     "name": "Christabel Frimpong",
     "headline": "AI Consultant for Training, Strategy, and Development",
     "intro": "I help organizations understand, adopt, and build with AI through clear training, strategic guidance, and practical development support.",
-    "logo": "https://example.com/logo.png",
-    "heroImage": "https://example.com/hero-image.jpg"
+    "logo": "/assets/logo.png",
+    "heroImage": "/assets/hero.jpg"
   },
   "about": {
     "title": "About Me",
@@ -17,17 +17,17 @@
       {
         "name": "AI Training & Workshops",
         "description": "Introductory and advanced training sessions designed to help teams understand AI concepts, tools, and best practices.",
-        "image": "https://example.com/training-image.jpg"
+        "image": "/assets/service-1.jpg"
       },
       {
         "name": "AI Strategy & Consulting",
         "description": "Strategic guidance on how AI can be applied to business processes, products, and decision-making.",
-        "image": "https://example.com/strategy-image.jpg"
+        "image": "/assets/service-2.jpg"
       },
       {
         "name": "Development Support",
         "description": "Technical support and guidance for building and integrating AI-powered features and systems.",
-        "image": "https://example.com/development-image.jpg"
+        "image": "/assets/service-3.jpg"
       }
     ]
   },
@@ -38,7 +38,7 @@
         "name": "Sample Project",
         "description": "A proof-of-concept project demonstrating how AI can be used to automate content updates and maintain a web presence.",
         "link": "",
-        "image": "https://example.com/project-image.jpg"
+        "image": "/assets/project-1.jpg"
       }
     ]
   },
@@ -63,9 +63,9 @@
   },
   "styles": {
     "font": "Arial, sans-serif",
-    "headerBackgroundColor": "#F0F0F0",
+    "headerBackgroundColor": "#FFFFFF",
     "headerTextColor": "#333333",
-    "sectionBackgroundColor": "#FFFFFF",
+    "sectionBackgroundColor": "#F0F0F0",
     "sectionTextColor": "#555555",
     "linkColor": "#007BFF",
     "hoverLinkColor": "#0056b3",
