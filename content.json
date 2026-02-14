@@ -43,5 +43,16 @@
   "availability": {
     "status": "Open to consulting opportunities",
     "note": "Availability subject to project scope and timeline."
+  },
+  "styles": {
+    "font": "Arial, sans-serif",
+    "headerBackgroundColor": "#F0F0F0",
+    "headerTextColor": "#333333",
+    "sectionBackgroundColor": "#FFFFFF",
+    "sectionTextColor": "#555555",
+    "linkColor": "#007BFF",
+    "hoverLinkColor": "#0056b3",
+    "padding": "20px",
+    "margin": "10px 0"
   }
 }
