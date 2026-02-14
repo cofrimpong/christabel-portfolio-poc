@@ -2,43 +2,60 @@
   "site": {
     "name": "Christabel Frimpong",
     "headline": "AI Consultant for Training, Strategy, and Development",
-    "intro": "I help organizations understand, adopt, and build with AI through clear training, strategic guidance, and practical development support."
+    "intro": "I help organizations understand, adopt, and build with AI through clear training, strategic guidance, and practical development support.",
+    "logo": "https://example.com/logo.png",
+    "heroImage": "https://example.com/hero-image.jpg"
   },
   "about": {
     "title": "About Me",
-    "description": "As an AI consultant, I specialize in assisting businesses and teams to navigate the complexities of artificial intelligence with a focus on practical and responsible applications. My expertise encompasses AI training, technical strategy development, and tailored support to meet the specific needs of organizations."
+    "description": "As an AI consultant, I specialize in assisting businesses and teams to navigate the complexities of artificial intelligence with a focus on practical and responsible applications. My expertise encompasses AI training, technical strategy development, and tailored support to meet the specific needs of organizations.",
+    "subtitle": "Guiding Organizations in AI Adoption"
   },
   "services": {
-    "title": "Services",
+    "title": "Our Expertise",
     "items": [
       {
         "name": "AI Training & Workshops",
-        "description": "Introductory and advanced training sessions designed to help teams understand AI concepts, tools, and best practices."
+        "description": "Introductory and advanced training sessions designed to help teams understand AI concepts, tools, and best practices.",
+        "image": "https://example.com/training-image.jpg"
       },
       {
         "name": "AI Strategy & Consulting",
-        "description": "Strategic guidance on how AI can be applied to business processes, products, and decision-making."
+        "description": "Strategic guidance on how AI can be applied to business processes, products, and decision-making.",
+        "image": "https://example.com/strategy-image.jpg"
       },
       {
         "name": "Development Support",
-        "description": "Technical support and guidance for building and integrating AI-powered features and systems."
+        "description": "Technical support and guidance for building and integrating AI-powered features and systems.",
+        "image": "https://example.com/development-image.jpg"
       }
     ]
   },
   "projects": {
-    "title": "Projects / Case Studies",
+    "title": "Projects & Case Studies",
     "items": [
       {
         "name": "Sample Project",
         "description": "A proof-of-concept project demonstrating how AI can be used to automate content updates and maintain a web presence.",
-        "link": ""
+        "link": "",
+        "image": "https://example.com/project-image.jpg"
       }
     ]
   },
   "contact": {
-    "title": "Contact",
+    "title": "Get in Touch",
     "email": "cofrimpong@gmail.com",
-    "cta": "If you are interested in working together or learning more, feel free to reach out."
+    "cta": "If you are interested in working together or learning more, feel free to reach out.",
+    "socialMediaLinks": [
+      {
+        "platform": "LinkedIn",
+        "url": "https://linkedin.com/in/christabelfrimpong"
+      },
+      {
+        "platform": "Twitter",
+        "url": "https://twitter.com/christabelai"
+      }
+    ]
   },
   "availability": {
     "status": "Open to consulting opportunities",
