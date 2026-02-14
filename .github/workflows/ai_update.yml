@@ -27,7 +27,7 @@ jobs:
 
       - name: Run AI updater
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          AI_API_KEY: ${{ secrets.AI_API_KEY }}
           ISSUE_TITLE: ${{ github.event.issue.title }}
           ISSUE_BODY: ${{ github.event.issue.body }}
         run: python tools/ai_update_content.py
