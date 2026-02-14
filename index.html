@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <style>
+      body { font-family: Arial, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 16px; line-height: 1.5; }
+      header { margin-bottom: 28px; }
+      h1 { margin: 0 0 8px 0; }
+      .muted { color: #555; }
+      section { margin: 28px 0; }
+      ul { padding-left: 18px; }
+      .card { border: 1px solid #ddd; border-radius: 10px; padding: 14px; margin: 10px 0; }
+      a { word-break: break-word; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 id="name">Loading...</h1>
+      <div class="muted" id="headline"></div>
+      <p id="intro"></p>
+    </header>
+
+    <section>
+      <h2 id="aboutTitle"></h2>
+      <p id="aboutDesc"></p>
+    </section>
+
+    <section>
+      <h2 id="servicesTitle"></h2>
+      <div id="servicesList"></div>
+    </section>
+
+    <section>
+      <h2 id="projectsTitle"></h2>
+      <div id="projectsList"></div>
+    </section>
+
+    <section>
+      <h2 id="contactTitle"></h2>
+      <p id="contactCta"></p>
+      <p><strong>Email:</strong> <a id="emailLink" href=""></a></p>
+    </section>
+
+    <section>
+      <h2>Availability</h2>
+      <p><strong id="availabilityStatus"></strong></p>
+      <p class="muted" id="availabilityNote"></p>
+    </section>
+
+    <script>
+      async function loadContent() {
+        const res = await fetch("./content.json", { cache: "no-store" });
+        if (!res.ok) throw new Error("Could not load content.json");
+        return await res.json();
+      }
+
+      function setText(id, text) {
+        document.getElementById(id).textContent = text || "";
+      }
+
+      function renderCards(containerId, items) {
+        const container = document.getElementById(containerId);
+        container.innerHTML = "";
+        (items || []).forEach(item => {
+          const card = document.createElement("div");
+          card.className = "card";
+
+          const title = document.createElement("h3");
+          title.textContent = item.name || "";
+          card.appendChild(title);
+
+          const desc = document.createElement("p");
+          desc.textContent = item.description || "";
+          card.appendChild(desc);
+
+          if (item.link) {
+            const link = document.createElement("a");
+            link.href = item.link;
+            link.target = "_blank";
+            link.rel = "noreferrer";
+            link.textContent = item.link;
+            card.appendChild(link);
+          }
+
+          container.appendChild(card);
+        });
+      }
+
+      (async () => {
+        try {
+          const data = await loadContent();
+
+          setText("name", data.site?.name);
+          setText("headline", data.site?.headline);
+          setText("intro", data.site?.intro);
+
+          setText("aboutTitle", data.about?.title);
+          setText("aboutDesc", data.about?.description);
+
+          setText("servicesTitle", data.services?.title);
+          renderCards("servicesList", data.services?.items);
+
+          setText("projectsTitle", data.projects?.title);
+          renderCards("projectsList", data.projects?.items);
+
+          setText("contactTitle", data.contact?.title);
+          setText("contactCta", data.contact?.cta);
+
+          const email = data.contact?.email || "";
+          const emailLink = document.getElementById("emailLink");
+          emailLink.textContent = email;
+          emailLink.href = email ? `mailto:${email}` : "";
+
+          setText("availabilityStatus", data.availability?.status);
+          setText("availabilityNote", data.availability?.note);
+        } catch (e) {
+          document.body.innerHTML = "<h1>Setup error</h1><p>Make sure <code>content.json</code> exists in the repo root.</p>";
+        }
+      })();
+    </script>
+  </body>
+</html>
