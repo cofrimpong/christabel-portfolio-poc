@@ -1,0 +1,52 @@
+{
+  "site": {
+    "name": "Christabel Frimpong",
+    "headline": "AI Consultant for Training, Strategy, and Development",
+    "intro": "I help organizations understand, adopt, and build with AI through clear training, strategic guidance, and practical development support."
+  },
+
+  "about": {
+    "title": "About Me",
+    "description": "I am an AI consultant focused on helping businesses and teams make sense of artificial intelligence in a practical and responsible way. My work includes AI training, technical strategy, and development support tailored to real-world needs."
+  },
+
+  "services": {
+    "title": "Services",
+    "items": [
+      {
+        "name": "AI Training & Workshops",
+        "description": "Introductory and advanced training sessions designed to help teams understand AI concepts, tools, and best practices."
+      },
+      {
+        "name": "AI Strategy & Consulting",
+        "description": "Strategic guidance on how AI can be applied to business processes, products, and decision-making."
+      },
+      {
+        "name": "Development Support",
+        "description": "Technical support and guidance for building and integrating AI-powered features and systems."
+      }
+    ]
+  },
+
+  "projects": {
+    "title": "Projects / Case Studies",
+    "items": [
+      {
+        "name": "Sample Project",
+        "description": "A proof-of-concept project demonstrating how AI can be used to automate content updates and maintain a web presence.",
+        "link": ""
+      }
+    ]
+  },
+
+  "contact": {
+    "title": "Contact",
+    "email": "cofrimpong@gmail.com",
+    "cta": "If you are interested in working together or learning more, feel free to reach out."
+  },
+
+  "availability": {
+    "status": "Open to consulting opportunities",
+    "note": "Availability subject to project scope and timeline."
+  }
+}
