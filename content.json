@@ -4,12 +4,10 @@
     "headline": "AI Consultant for Training, Strategy, and Development",
     "intro": "I help organizations understand, adopt, and build with AI through clear training, strategic guidance, and practical development support."
   },
-
   "about": {
     "title": "About Me",
-    "description": "I am an AI consultant focused on helping businesses and teams make sense of artificial intelligence in a practical and responsible way. My work includes AI training, technical strategy, and development support tailored to real-world needs."
+    "description": "As an AI consultant, I specialize in assisting businesses and teams to navigate the complexities of artificial intelligence with a focus on practical and responsible applications. My expertise encompasses AI training, technical strategy development, and tailored support to meet the specific needs of organizations."
   },
-
   "services": {
     "title": "Services",
     "items": [
@@ -27,7 +25,6 @@
       }
     ]
   },
-
   "projects": {
     "title": "Projects / Case Studies",
     "items": [
@@ -38,13 +35,11 @@
       }
     ]
   },
-
   "contact": {
     "title": "Contact",
     "email": "cofrimpong@gmail.com",
     "cta": "If you are interested in working together or learning more, feel free to reach out."
   },
-
   "availability": {
     "status": "Open to consulting opportunities",
     "note": "Availability subject to project scope and timeline."
